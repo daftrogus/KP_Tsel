@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="loginregisterTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="HomepageApp" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="android:title">@string/title_activity_homepage</item> -->
+        <!-- Customize your theme here. -->
+        <item name="android:icon">@drawable/logo_telkomschool</item>
+        <item name="android:textColorPrimary">@color/colorTelkom</item>
+        <item name="colorPrimary">@color/colorGray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>-->
+        <item name="android:windowLayoutInDisplayCutoutMode"> never </item>
+        <item name="colorControlHighlight">@color/colorTelkom</item>
+    </style>
+
+</resources>

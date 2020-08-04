@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">KP Project</string>
+    <string name="login_page_title">MULTIPLE LOGIN</string>
+    <string name="login_page_button1">LOGIN GURU</string>
+    <string name="login_page_button2">LOGIN SISWA</string>
+    <string name="login_page_username">Username</string>
+    <string name="descUsername">Username Autofill</string>
+    <string name="login_page_password">Password</string>
+    <string name="descPassword">Password Autofill</string>
+    <string name="register_page_title">REGISTER</string>
+    <string name="register_page_email">Your Email</string>
+    <string name="register_page_button">SUBMIT</string>
+    <string name="descEmail">Email Autofill</string>
+    <string name="mobile_register_title">PHONE REGISTER</string>
+    <string name="username_mobile_register">Username</string>
+    <string name="phone_register">Your Phone Number</string>
+    <string name="phone_register_button">SUMBIT</string>
+    <string name="mobile_check_title">USER CHECK</string>
+    <string name="username_mobile_check">Username</string>
+    <string name="phone_check">Your Phone Number</string>
+    <string name="phone_check_button">SUBMIT</string>
+    <string name="title_activity_homepage">TELKOM STUDENT REPORT</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nav_home">home</string>
+    <string name="nav_settings">settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

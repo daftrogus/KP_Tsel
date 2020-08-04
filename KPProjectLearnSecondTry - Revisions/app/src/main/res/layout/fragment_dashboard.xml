@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".DashboardFragment"
+              android:background="@color/colorWhite" android:id="@+id/fragment_dashboard">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="415dp"
+                android:layout_height="50dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="#a0a0a0" app:layout_constraintTop_toTopOf="parent" android:id="@+id/title_bar"
+        >
+
+            <TextView
+                    android:text="Dashboard"
+                    android:textColor="@color/colorTelkom"
+                    android:textStyle="bold"
+                    android:textSize="32dp"
+                    android:layout_width="323dp"
+                    android:layout_height="48dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/fragment_title_dashboard"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="395dp"
+                android:layout_height="757dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/title_bar">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#fff8bd"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/graph_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="#f7eb7e"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="188dp"
+                                android:layout_height="match_parent"
+                                android:text="  Perkembangan Nilai"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18.5dp" />
+
+                            <TextView
+                                android:id="@+id/username_graph"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.github.mikephil.charting.charts.LineChart
+                                    android:id="@+id/scoreboard"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </com.github.mikephil.charting.charts.LineChart>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="#ffbd4a"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18.5dp"
+                                android:textColor="@color/colorBlack"
+                                android:text="  Daftar Kehadiran" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="#ffe7bd"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal"
+                                tools:ignore="ExtraText">
+
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Januari"
+                                        android:textColor="@color/colorBlack"
+                                        android:textStyle="bold"
+                                        />
+
+                                    <com.github.mikephil.charting.charts.PieChart
+                                        android:id="@+id/pie_januari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                    </com.github.mikephil.charting.charts.PieChart>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Februari"
+                                        android:textColor="@color/colorBlack"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <com.github.mikephil.charting.charts.PieChart
+                                        android:id="@+id/pie_februari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                    </com.github.mikephil.charting.charts.PieChart>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Maret"
+                                        android:textColor="@color/colorBlack"
+                                        android:textStyle="bold"
+
+                                        />
+
+                                    <com.github.mikephil.charting.charts.PieChart
+                                        android:id="@+id/pie_maret"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                    </com.github.mikephil.charting.charts.PieChart>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/textView7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="April"
+                                        android:textColor="@color/colorBlack"
+                                        android:textStyle="bold"/>
+
+                                    <com.github.mikephil.charting.charts.PieChart
+                                        android:id="@+id/pie_april"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                    </com.github.mikephil.charting.charts.PieChart>
+
+                                        />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Mei"
+                                        android:textColor="@color/colorBlack"
+                                        android:textStyle="bold"/>
+
+                                    <com.github.mikephil.charting.charts.PieChart
+                                        android:id="@+id/pie_mei"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                    </com.github.mikephil.charting.charts.PieChart>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
